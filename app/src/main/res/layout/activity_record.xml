@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordActivity">
+
+    <Button
+        android:id="@+id/startRecordingButton"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:text="Start Recording"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/stopRecordingButton"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="Send data"
+        android:layout_below="@id/startRecordingButton"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTranfertFTP"
+        android:text="Data have been sent to the server"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/stopRecordingButton"
+        android:visibility="gone"
+        android:textColor="#3CF02A"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
